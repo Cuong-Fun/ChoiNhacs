@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:onClick="click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tamhon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anh_nen"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#888888"/>
+
+        <ImageView
+            android:id="@+id/imgplus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/avatar"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plus" />
+
+        <RelativeLayout
+            android:id="@+id/love"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/imgplus"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/heart"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:onClick="click"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="7.000k"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/comment"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/love"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/comment"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="1235"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/comment"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/share"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="600"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txvNgan"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_vertical"
+            android:text="Hoàng Ngân"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="-100dp"
+            android:layout_below="@id/txvNgan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Tâm hồn đang tuổi trăng rằm\n Anh nào 1 tiếng thì nằm với em"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/heart"
+            android:tint="#9C27B0" />
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/heart"
+            android:tint="#FFFFFF" />
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/heart"
+            android:tint="#FFFFFF" />
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/heart"
+            android:tint="#FFFFFF" />
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/heart"
+            android:tint="#FFFFFF" />
+    </LinearLayout>
+     </RelativeLayout>
+    <RelativeLayout
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/info_people"/>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
